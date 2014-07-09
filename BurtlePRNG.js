@@ -21,7 +21,11 @@ BurtlePRNG.prototype.next = function() {
   ctx[2] = (ctx[3] + e)>>>0;
   ctx[3] = (e      + ctx[0])>>>0;
   return ctx[3];
-}
+};
+
+BurtlePRNG.prototype['float'] = function() {
+  return this.next() / 4294967296.0;
+};
 
 if (typeof module === 'object') {
   module.exports = BurtlePRNG;

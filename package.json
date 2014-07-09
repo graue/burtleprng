@@ -1,0 +1,14 @@
+{
+  "name": "burtleprng",
+  "version": "0.1.0",
+  "description": "Fast, seeded, noncryptographic random numbers",
+  "keywords": ["random", "seed"],
+  "homepage": "https://github.com/graue/burtleprng",
+  "bugs": "https://github.com/graue/burtleprng/issues",
+  "license": "CC0-1.0",
+  "main": "BurtlePRNG.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graue/burtleprng.git"
+  }
+}

@@ -1,4 +1,7 @@
 function BurtlePRNG(seed) {
+  if (arguments.length < 1) {
+    throw new TypeError('BurtlePRNG constructor requires a seed');
+  }
   seed >>>= 0;
   var ctx = this.ctx = new Array(4);
   ctx[0] = 0xf1ea5eed;

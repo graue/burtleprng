@@ -10,5 +10,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/graue/burtleprng.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.5"
   }
 }

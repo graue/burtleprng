@@ -31,6 +31,17 @@ code using Math.random:
 ```
 
 
+## Usage
+
+If you're using Node.js, Browserify or Webpack, use the usual `npm
+install burtleprng` and `require`:
+
+    var BurtlePRNG = require('burtleprng');
+
+Otherwise, simply include BurtlePRNG.js in a script tag. It will
+export a single class, BurtlePRNG.
+
+
 ## API
 
 ### new BurtlePRNG(seed)

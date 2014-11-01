@@ -12,11 +12,11 @@ function BurtlePRNG(seed) {
   return this;
 }
 
-function rot(x, k) {
-  return (x << k) | (x >> (32-k));
-}
-
 BurtlePRNG.prototype.next = function() {
+  var rot = function(x, k) {
+    return (x << k) | (x >> (32-k));
+  }
+
   var ctx = this.ctx;
   var e =           (ctx[0] - rot(ctx[1], 27))>>>0;
   ctx[0] = (ctx[1] ^ rot(ctx[2], 17))>>>0;

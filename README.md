@@ -20,11 +20,11 @@ other tests are excellent for both.)
 Both BurtlePRNG and the native PRNG are incredibly fast and unlikely
 to be a bottleneck in your application.
 
-You can use `test.js`, which prints 10MB of random bytes to the
+You can use `speedtest.js`, which prints 10MB of random bytes to the
 standard output using Node, to run your own benchmarks. On Node
 0.10.28, there is no significant performance difference between
-generating 32-bit unsigned integers using test.js versus equivalent
-code using Math.random:
+generating 32-bit unsigned integers using speedtest.js versus
+equivalent code using Math.random:
 
 ```javascript
 ((1<<31) * 2 * Math.random()) >>> 0

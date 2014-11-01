@@ -51,7 +51,7 @@ mandatory and should be an unsigned 32-bit integer. Reasonable ways to
 come up with a seed include:
 
 ```javascript
-Date.now() & 0xffffffff
+Date.now() & 0x7fffffff
 
 // or
 
